@@ -198,18 +198,38 @@ progress {
 }
 
 
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-container{
+    flex: 1;
+    padding-right: 20px;  /* 控制文字区域与图片之间的间距 */
+}
+
 .img-container {
+    flex: 0 0 auto;  /* 使图片区域大小自适应 */
+    max-width: 45%;
+    margin-right: 15px;
+}
+
+.img-container img {
+    max-width: 100%;  /* 保证图片自适应容器宽度 */
+    height: auto;
+}
+
+.memory-container {
     display: flex;
     justify-content: space-around;
 }
 
-.img-container img {
+.memory-container img {
     max-width: 90%;
     max-height: 90%;
     transform: scale(0.9);
 }
-
-
 
 .column .content {
     text-align: center;

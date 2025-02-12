@@ -114,40 +114,20 @@
 <section class="section">
     <div class="container is-max-desktop">
         <h2 class="results title">Overview</h2>
-        <div class="img-container">
-            <img src="static/images/overview.png">
+        <div class="content-container">
+            <div class="img-container">
+                <img src="static/images/overview.png" alt="Overview Image">
+            </div>
+            <div class="text-container">
+                <p>In real-world scenarios, gradient information is not always available or computable, often referred
+                    to as the "<b>gradient ban</b>," making traditional methods for overcoming forgetting unavailable,
+                    as backpropagation is restricted or not feasible. <b>ZeroFlow</b> method leverages zeroth-order (ZO)
+                    optimization to tackle catastrophic forgetting, focusing on dynamic data flow. By utilizing only
+                    forward passes, it eliminates the need for backpropagation, providing a cost-effective solution with
+                    minimal computational overhead. Its flexibility, through a range of ZO methods, ensures adaptability
+                    across different forgetting scenarios and model types.</p>
+            </div>
         </div>
-
-        <!--description-->
-        <p>In real-world scenarios, gradient information is not always available or computable, often referred to as the
-            "<b>gradient ban</b>." This can occur in the following cases, making traditional methods for overcoming
-            forgetting
-            not available, as backpropagation is restricted or not feasible:</p>
-        <ul>
-            <li>
-                <strong>Scenario i: Large Language Models as a Service (LLMaaS) and Black-box APIs</strong><br>
-                Pretrained models are monetized, where model owners do not release the pretrained models publicly but
-                instead provide a service. In this case, only the inputs and outputs are accessible.
-            </li>
-            <li>
-                <strong>Scenario ii: Hardware Systems That Do Not Support Backpropagation</strong><br>
-                Some hardware systems do not support backpropagation, either due to extremely high memory demands,
-                unsupported systems and hardware, or other limitations.
-            </li>
-            <li>
-                <strong>Scenario iii: AI for Science with Non-Differentiable Systems</strong><br>
-                In certain scientific applications, the underlying systems are non-differentiable, making
-                backpropagation infeasible.
-            </li>
-        </ul>
-
-        <p style="margin-top: 20px;"><b>ZeroFlow</b> leverages zeroth-order (ZO) optimization to tackle catastrophic
-            forgetting, focusing on dynamic data flow. By utilizing only forward passes, it eliminates the need for
-            backpropagation, offering a cost-effective solution with minimal computational overhead. Its flexibility,
-            through a range of ZO methods, ensures adaptability across different forgetting scenarios and model types.
-        </p>
-
-
     </div>
 </section>
 
@@ -720,7 +700,7 @@
 <section class="section">
     <div class="container is-max-desktop">
         <h2 class="results title">Memory Consumption</h2>
-        <div class="img-container">
+        <div class="memory-container">
             <img src="static/images/memory_ease.png" alt="First Image" width="400" height="auto">
             <img src="static/images/memory_aper.png" alt="Second Image" width="400" height="auto">
         </div>
